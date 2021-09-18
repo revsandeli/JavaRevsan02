@@ -9,32 +9,72 @@ public class c3_logicalOperators {
     public static void main(String[] args){
 
         // && -- and
-        System.out.println( (5>3) && (3>5) );//(true && false) //false
-        System.out.println( (10<5) && (0==0));//false && true  //false
-        System.out.println((1==2) && (2!=2));//false && false   //false
-        System.out.println((10>=10) && (10<=10)); //true && true  // true
+        System.out.println( (5>3) && (3>5) );   //(true && false) //false
+                         //true && false = false
+        // 5 is bigger than 3 "and" 3 is  not bigger than 5
+        // result is false because first condition is true and second condition is false. When we use "&&" operator it pick false
+        // if there is a false no matter other ones are true
+        // the result will be false
+        //exp ==>   true && true && true && false && true ==false
 
-        //if you are using and operator only option that you will get your result is all conditions true
+        System.out.println( (10<5) && (0==0));
+                            //false && true  //false
+
+        System.out.println((1==2) && (2!=2));
+                          //false && false   //false
+
+        System.out.println((10>=10) && (10<=10));
+                             //true && true      // true
+
+        //if you are using "and" operator only option that you will get your result is all conditions true
         //other then that alwasy will be false
-        //true && true && true && false && true ==false
+
+
+
+
+
+
+
+
+
 
         System.out.println("***************************");
 
         // || -- or
-        System.out.println( (5>3) || (3>5) );//(true || false) //true
+        System.out.println( (5>3) || (3>5) );
+                          //(true || false) //true
+
+        // when use "or" operator it picks TRUE so if other
+        //first one is conditions are false it will still be true. in this example 5 is bigger than 3 or 3 is bigger than 5.
+        //so the result will be true
         System.out.println( (10<5) || (0==0));//false || true  //true
         System.out.println((1==2) || (2!=2));//false || false   //false
         System.out.println((10>=10) || (10<=10)); //true || true  // true
 
+        //    exp-- true ||  true ||  true ||  false || true ==true (because doesnt metter how many false you have)
+        //    exp-- false || true || false == true // (or operators always give True result. doesnt metter how many false you have)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         //  shift plus \ == |
         //  shift number 7 == &
 
-        //true ||  true ||  true ||  false || true ==true
-        //false || true || false == true
+
 
         System.out.println("************");
 
-        //  !  -- not (opposite)
+        //  !  -- not (opposite) this means two values are not equal.
         // !true == false
         // !!false ==> !true == > false
 

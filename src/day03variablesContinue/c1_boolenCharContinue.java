@@ -6,6 +6,7 @@ public class c1_boolenCharContinue {
 //
     public static void main(String[] args){
 
+
         boolean b1=false;
         boolean b2=25 == 30;//false
         boolean b3 = 20 != 21;//true
@@ -20,6 +21,15 @@ public class c1_boolenCharContinue {
         // !false =true
         System.out.println(true == false);//false
         System.out.println(!true == false);//false == false  ---- true
+
+
+
+
+
+
+
+
+
 
         System.out.println(!true != !false);
         //(false != true) ----  true
